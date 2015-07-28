@@ -2,16 +2,10 @@ var React = require('react');
 var Griddle = require('griddle-react');
 var dataEvents = require('../data/sysdig.json');
 
-import Table from './scripts/table.jsx';
 import SysdigChart from './scripts/chart.jsx';
 import Data from './scripts/data.jsx';
 
 var SysdigData = new Data(dataEvents);
-
-React.render(
-     <Table.SysdigTable data={SysdigData.events}/>,
-    document.getElementById('content-table')
-);
 
 React.render(
     <SysdigChart.Treemap data={SysdigData.countOccurrence('proc.name')}/>,
