@@ -2,9 +2,9 @@ var React = require('react');
 var Griddle = require('griddle-react');
 var dataEvents = require('../data/sysdig.json');
 
-import Table from './table.jsx';
-import SysdigChart from './chart.jsx';
-import Data from './data.jsx';
+import Table from './scripts/table.jsx';
+import SysdigChart from './scripts/chart.jsx';
+import Data from './scripts/data.jsx';
 
 var SysdigData = new Data(dataEvents);
 
